@@ -17,7 +17,7 @@ public class insertInterval {
         //if above conditions fail it is an overlap
         else{
             newInterval[0] = Math.min(newInterval[0],slot[0]);
-            newInterval[1] =Math.min(newInterval[1],slot[1]);
+            newInterval[1] =Math.max(newInterval[1],slot[1]);
 
         }
        }
